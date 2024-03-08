@@ -5,7 +5,7 @@ TaskManager::TaskManager(size_t maxThreads) : _maxThreads(maxThreads) {
 }
 
 void TaskManager::add(Task task) {
-    _tasks.emplace(task);
+    _tasks.push(task);
 }
 
 void TaskManager::start() {
